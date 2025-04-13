@@ -11,6 +11,7 @@ The methodology for each problem of the challenge is explained.
 
 **Problem - 1: Little Peak**<br>
 The circuit used 4 qubits. It was run on Bluequbit using the CPU option. 100 shots were used. The maximum frequency string was found using the results obtained. The answer was _1001_.
+![circuit_1](1.png)
 
 **Problem - 2: Swift Rise**<br>
 The circuit used 28 qubits. It was run on Bluequbit using the CPU option. The number of shots were increased to 1024 as the number of bitstrings is 2^28. The maximum frequency string was found using the results obtained. The answer was _1100101101100011011000011100_.
