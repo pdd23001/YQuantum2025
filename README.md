@@ -10,7 +10,7 @@ Given a QASM circuit, the task is to return the bitstring with the highest outco
 The methodology for each problem of the challenge is explained.
 
 **Problem - 1: Little Peak**<br>
-The circuit used 4 qubits. It was run on Bluequbit using the CPU option. 100 shots were used. The maximum frequency string was found using the results obtained. The answer was _1001_.
+The circuit used 4 qubits. It was run on Bluequbit using the CPU option. 100 shots were used. The maximum frequency string was found using the results obtained. The answer was _1001_.<br>
 ![circuit_1](1.png)
 
 **Problem - 2: Swift Rise**<br>
@@ -24,7 +24,7 @@ The circuit used 44 qubits. It was run on Bluequbit using the mps.cpu option. Th
 We approached this problem using 5 different methods to identify the distinct peak bitstring. While none produced a clearly dominant peak, several approaches yielded promising and informative results.
 
 1) Circuit Cutting: Vertical
-Assumption: the amplitude of the peaked quantum state increases faster than non-peaked quantum states as we progress in time => Divide the circuit into smaller blocks and run the simulation only on the first block as an approximation.
+Assumption: the amplitude of the peaked quantum state increases faster than non-peaked quantum states as we progress in time => Divide the circuit into smaller blocks and run the simulation only on the first block as an approximation.<br>
 
 ![cut_vertical](cut_vertical.png)
 
@@ -33,7 +33,7 @@ Check the connectivity of the qubits and partition them into different connected
 
 
 3) Quantum Rings Simulation
-mps.cpu is not enough. The number of two-qubit gates were more than 1000, and this is not supported by mps.cpu. To overcome this, we tried using QuantumRings simulator which supports simulation of upto 200 qubits on a 32/64 GB machine. However, even their simulator failed to provide a correct output even after running for 16 hours 53 minutes. This approach was unsuccessful for challenge , however, successful for challenge 3.
+mps.cpu is not enough. The number of two-qubit gates were more than 1000, and this is not supported by mps.cpu. To overcome this, we tried using QuantumRings simulator which supports simulation of upto 200 qubits on a 32/64 GB machine. However, even their simulator failed to provide a correct output even after running for 16 hours 53 minutes. This approach was unsuccessful for challenge , however, successful for challenge 3.<br>
 
 ![qr_ss](qr_ss.png)
 
