@@ -4,7 +4,7 @@
 Peaked circuits are a way to achieve verifiable quantum advantage. They produce a non-uniform output. After measurement, one of the all possible bitstrings has the highest outcome.
 
 ## Problem Statement
-Given a QASM circuit, the task is to return the bitstring with the highest outcome.
+Given a QASM circuit, the task is to return the bitstring with the highest frequency.
 
 ## Methodology
 The methodology for each problem of the challenge is explained.
